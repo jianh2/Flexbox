@@ -1,0 +1,93 @@
+/* The first chunk of this style exist primarily so that you can see the elements - Flexbox would work without it, but it's easier to see when the font is large and the items have a background color */
+/* Border-box sizing */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Default to a sans-serif font */
+html {
+  font-family: sans-serif;
+}
+
+/* Make the fonts text large, white, and spacious */
+.item {
+  font-size: 32px;
+  color: white;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+  padding: 12px 4px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* Make rows visible */
+.row {
+  min-height: 100px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Color each language element */
+#ruby {
+  background-color: #df4638;
+}
+#python {
+  background-color: #8dad53;
+}
+#js {
+  background-color: #a8d3dd;
+}
+#hyper {
+  background-color: #f7cc77;
+}
+#css {
+  background-color: #2454db;
+}
+#aframe {
+  background-color: #db4260;
+}
+#p5 {
+  background-color: #e88a9f;
+}
+#bootstrap {
+  background-color: #7157ad;
+}
+#java {
+  background-color: #ca2b1d;
+}
+#swift {
+  background-color: #ed7b46;
+}
+
+/* ----------------------------------------------- */
+/* ---Please do not modify code above this line--- */
+/* ----------Code your flex classes below--------- */
+/* ----------------------------------------------- */
+
+/* Parent or Container elements */
+/* Style them all at once with this selector */
+.row {
+  display: flex;
+}
+
+/* OR Style each row individually with these selectors */
+#row1 {
+  flex-direction: row-reverse;
+}
+
+#row2 {
+  flex-direction: column;
+}
+
+#row3 {
+  flex-direction: row;
+}
+/* Child elements or items */
+.item {
+}
